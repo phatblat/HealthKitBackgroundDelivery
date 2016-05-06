@@ -13,10 +13,11 @@
 		F87F70DC1CDC40E7000A9D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87F70DA1CDC40E7000A9D88 /* Main.storyboard */; };
 		F87F70DE1CDC40E7000A9D88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87F70DD1CDC40E7000A9D88 /* Assets.xcassets */; };
 		F87F70E11CDC40E7000A9D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87F70DF1CDC40E7000A9D88 /* LaunchScreen.storyboard */; };
-		F87F70EC1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70EB1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.swift */; };
 		F87F70F71CDC4144000A9D88 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70F61CDC4144000A9D88 /* HealthKitManager.swift */; };
 		F87F70F91CDC41A5000A9D88 /* FirstViewControllerAfterOnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70F81CDC41A5000A9D88 /* FirstViewControllerAfterOnboardingFlow.swift */; };
 		F87F70FC1CDC46EC000A9D88 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F87F70FB1CDC46EC000A9D88 /* HealthKit.framework */; };
+		F87F70FE1CDC4E6B000A9D88 /* HKSampleType+TypeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70FD1CDC4E6B000A9D88 /* HKSampleType+TypeName.swift */; };
+		F87F71001CDC4E9C000A9D88 /* HKSampleTypeNameSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70FF1CDC4E9C000A9D88 /* HKSampleTypeNameSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +42,13 @@
 		F87F70E01CDC40E7000A9D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F87F70E21CDC40E7000A9D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F87F70E71CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthKitBackgroundDeliveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F87F70EB1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitBackgroundDeliveryTests.swift; sourceTree = "<group>"; };
 		F87F70ED1CDC40E7000A9D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F87F70F61CDC4144000A9D88 /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		F87F70F81CDC41A5000A9D88 /* FirstViewControllerAfterOnboardingFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewControllerAfterOnboardingFlow.swift; sourceTree = "<group>"; };
 		F87F70FA1CDC46EC000A9D88 /* HealthKitBackgroundDelivery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HealthKitBackgroundDelivery.entitlements; sourceTree = "<group>"; };
 		F87F70FB1CDC46EC000A9D88 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		F87F70FD1CDC4E6B000A9D88 /* HKSampleType+TypeName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKSampleType+TypeName.swift"; sourceTree = "<group>"; };
+		F87F70FF1CDC4E9C000A9D88 /* HKSampleTypeNameSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKSampleTypeNameSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				F87F70D61CDC40E7000A9D88 /* AppDelegate.swift */,
 				F87F70F61CDC4144000A9D88 /* HealthKitManager.swift */,
+				F87F70FD1CDC4E6B000A9D88 /* HKSampleType+TypeName.swift */,
 				F87F70D81CDC40E7000A9D88 /* OnboardingViewController.swift */,
 				F87F70F81CDC41A5000A9D88 /* FirstViewControllerAfterOnboardingFlow.swift */,
 				F87F70DA1CDC40E7000A9D88 /* Main.storyboard */,
@@ -126,7 +129,7 @@
 		F87F70EA1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests */ = {
 			isa = PBXGroup;
 			children = (
-				F87F70EB1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.swift */,
+				F87F70FF1CDC4E9C000A9D88 /* HKSampleTypeNameSpec.swift */,
 				F87F70ED1CDC40E7000A9D88 /* Info.plist */,
 			);
 			path = HealthKitBackgroundDeliveryTests;
@@ -292,6 +295,7 @@
 			files = (
 				F87F70D91CDC40E7000A9D88 /* OnboardingViewController.swift in Sources */,
 				F87F70D71CDC40E7000A9D88 /* AppDelegate.swift in Sources */,
+				F87F70FE1CDC4E6B000A9D88 /* HKSampleType+TypeName.swift in Sources */,
 				F87F70F71CDC4144000A9D88 /* HealthKitManager.swift in Sources */,
 				F87F70F91CDC41A5000A9D88 /* FirstViewControllerAfterOnboardingFlow.swift in Sources */,
 			);
@@ -301,7 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F87F70EC1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.swift in Sources */,
+				F87F71001CDC4E9C000A9D88 /* HKSampleTypeNameSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

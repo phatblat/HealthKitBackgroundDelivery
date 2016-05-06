@@ -54,7 +54,11 @@ private extension HealthKitManager {
 
     /// Initiates an `HKAnchoredObjectQuery` for each type of data that the app reads and stores
     /// the result as well as the new anchor.
-    private func readHealthKitData() { /* ... */ }
+    private func readHealthKitData() {
+        for type in dataTypesToRead() {
+            readHealthKitData(type)
+        }
+    }
 
     /// Sets up the observer queries for background health data delivery.
     ///
@@ -109,5 +113,37 @@ private extension HealthKitManager {
             HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight)!,
             HKObjectType.workoutType()
         )
+    }
+}
+
+// MARK: - Queries
+private extension HealthKitManager {
+    private func readHealthKitData(type: HKSampleType) {
+        let typeName = type.typeName
+        let anchorKey = typeName + "QueryAnchor"
+        let anchor = NSUserDefaults.standardUserDefaults().integerForKey(anchorKey)
+
+        // Deprecated iOS 8 API
+        // Specifying no limit because otherwise we only get the oldest record
+        let query = HKAnchoredObjectQuery(type: type, predicate: nil, anchor: anchor, limit: Int(HKObjectQueryNoLimit)) {
+            (query: HKAnchoredObjectQuery, samples: [HKSample]?, newAnchor: Int, error: NSError?) in
+
+            guard let samples = samples as? [HKQuantitySample] else {
+                debugPrint("Unable to query HealthKit for \(typeName) sample: \(error?.localizedDescription)")
+                return
+            }
+
+            guard samples.count > 0, let _ = samples.last else {
+                debugPrint("HealthKit \(typeName) query successful, but returned empty results")
+                return
+            }
+
+            NSUserDefaults.standardUserDefaults().setInteger(newAnchor, forKey: anchorKey)
+
+//            let value = sample.quantity.doubleValueForUnit(heightUnit.hkunit)
+//            debugPrint("Sample retrieved from HealthKit: \(value), \(heightUnitString) (source: \(sample.source))")
+        }
+
+        healthStore.executeQuery(query)
     }
 }
