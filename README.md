@@ -1,6 +1,6 @@
 # HealthKitBackgroundDelivery
 
-Example of an app with background delivery HealthKit data.
+Example of an app with background delivery of HealthKit data.
 
 ## License
 

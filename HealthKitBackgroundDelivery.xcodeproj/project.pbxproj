@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F87F70D71CDC40E7000A9D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70D61CDC40E7000A9D88 /* AppDelegate.swift */; };
-		F87F70D91CDC40E7000A9D88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70D81CDC40E7000A9D88 /* ViewController.swift */; };
+		F87F70D91CDC40E7000A9D88 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70D81CDC40E7000A9D88 /* OnboardingViewController.swift */; };
 		F87F70DC1CDC40E7000A9D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87F70DA1CDC40E7000A9D88 /* Main.storyboard */; };
 		F87F70DE1CDC40E7000A9D88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87F70DD1CDC40E7000A9D88 /* Assets.xcassets */; };
 		F87F70E11CDC40E7000A9D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87F70DF1CDC40E7000A9D88 /* LaunchScreen.storyboard */; };
 		F87F70EC1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70EB1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.swift */; };
+		F87F70F71CDC4144000A9D88 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70F61CDC4144000A9D88 /* HealthKitManager.swift */; };
+		F87F70F91CDC41A5000A9D88 /* FirstViewControllerAfterOnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70F81CDC41A5000A9D88 /* FirstViewControllerAfterOnboardingFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,7 @@
 /* Begin PBXFileReference section */
 		F87F70D31CDC40E7000A9D88 /* HealthKitBackgroundDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthKitBackgroundDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87F70D61CDC40E7000A9D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F87F70D81CDC40E7000A9D88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F87F70D81CDC40E7000A9D88 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F87F70DB1CDC40E7000A9D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F87F70DD1CDC40E7000A9D88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F87F70E01CDC40E7000A9D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		F87F70E71CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthKitBackgroundDeliveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87F70EB1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitBackgroundDeliveryTests.swift; sourceTree = "<group>"; };
 		F87F70ED1CDC40E7000A9D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F87F70F61CDC4144000A9D88 /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		F87F70F81CDC41A5000A9D88 /* FirstViewControllerAfterOnboardingFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewControllerAfterOnboardingFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				F87F70D61CDC40E7000A9D88 /* AppDelegate.swift */,
-				F87F70D81CDC40E7000A9D88 /* ViewController.swift */,
+				F87F70F61CDC4144000A9D88 /* HealthKitManager.swift */,
+				F87F70D81CDC40E7000A9D88 /* OnboardingViewController.swift */,
+				F87F70F81CDC41A5000A9D88 /* FirstViewControllerAfterOnboardingFlow.swift */,
 				F87F70DA1CDC40E7000A9D88 /* Main.storyboard */,
 				F87F70DD1CDC40E7000A9D88 /* Assets.xcassets */,
 				F87F70DF1CDC40E7000A9D88 /* LaunchScreen.storyboard */,
@@ -197,8 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F87F70D91CDC40E7000A9D88 /* ViewController.swift in Sources */,
+				F87F70D91CDC40E7000A9D88 /* OnboardingViewController.swift in Sources */,
 				F87F70D71CDC40E7000A9D88 /* AppDelegate.swift in Sources */,
+				F87F70F71CDC4144000A9D88 /* HealthKitManager.swift in Sources */,
+				F87F70F91CDC41A5000A9D88 /* FirstViewControllerAfterOnboardingFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
