@@ -58,11 +58,10 @@ private extension HealthKitManager {
 
     /// Sets up the observer queries for background health data delivery.
     ///
-    /// - parameter types: Set of `HKObjectType` to observe changes to.
-    private func setUpBackgroundDeliveryForDataTypes(types: Set<HKObjectType>) {
+    /// - parameter types: Set of `HKSampleType` to observe changes to.
+    private func setUpBackgroundDeliveryForDataTypes(types: Set<HKSampleType>) {
         for type in types {
-            guard let sampleType = type as? HKSampleType else { print("ERROR: \(type) is not an HKSampleType"); continue }
-            let query = HKObserverQuery(sampleType: sampleType, predicate: nil) { [weak self] (query: HKObserverQuery, completionHandler: HKObserverQueryCompletionHandler, error: NSError?) in
+            let query = HKObserverQuery(sampleType: type, predicate: nil) { [weak self] (query: HKObserverQuery, completionHandler: HKObserverQueryCompletionHandler, error: NSError?) in
                 debugPrint("observer query update handler called for type \(type), error: \(error)")
                 guard let strongSelf = self else { return }
                 strongSelf.queryForUpdates(type)
@@ -92,8 +91,8 @@ private extension HealthKitManager {
 
     /// Types of data that this app wishes to read from HealthKit.
     ///
-    /// - returns: A set of HKObjectType.
-    private func dataTypesToRead() -> Set<HKObjectType> {
+    /// - returns: A set of HKSampleType.
+    private func dataTypesToRead() -> Set<HKSampleType> {
         return Set(arrayLiteral:
             HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)!,
             HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight)!,
