@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F87F70D71CDC40E7000A9D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70D61CDC40E7000A9D88 /* AppDelegate.swift */; };
+		F87F70D91CDC40E7000A9D88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70D81CDC40E7000A9D88 /* ViewController.swift */; };
+		F87F70DC1CDC40E7000A9D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87F70DA1CDC40E7000A9D88 /* Main.storyboard */; };
+		F87F70DE1CDC40E7000A9D88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87F70DD1CDC40E7000A9D88 /* Assets.xcassets */; };
+		F87F70E11CDC40E7000A9D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87F70DF1CDC40E7000A9D88 /* LaunchScreen.storyboard */; };
+		F87F70EC1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87F70EB1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F87F70E81CDC40E7000A9D88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F87F70CB1CDC40E7000A9D88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F87F70D21CDC40E7000A9D88;
+			remoteInfo = HealthKitBackgroundDelivery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F87F70D31CDC40E7000A9D88 /* HealthKitBackgroundDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthKitBackgroundDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87F70D61CDC40E7000A9D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F87F70D81CDC40E7000A9D88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F87F70DB1CDC40E7000A9D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F87F70DD1CDC40E7000A9D88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F87F70E01CDC40E7000A9D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F87F70E21CDC40E7000A9D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F87F70E71CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthKitBackgroundDeliveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87F70EB1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitBackgroundDeliveryTests.swift; sourceTree = "<group>"; };
+		F87F70ED1CDC40E7000A9D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F87F70D01CDC40E7000A9D88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87F70E41CDC40E7000A9D88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F87F70CA1CDC40E7000A9D88 = {
+			isa = PBXGroup;
+			children = (
+				F87F70D51CDC40E7000A9D88 /* HealthKitBackgroundDelivery */,
+				F87F70EA1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests */,
+				F87F70D41CDC40E7000A9D88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F87F70D41CDC40E7000A9D88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F87F70D31CDC40E7000A9D88 /* HealthKitBackgroundDelivery.app */,
+				F87F70E71CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F87F70D51CDC40E7000A9D88 /* HealthKitBackgroundDelivery */ = {
+			isa = PBXGroup;
+			children = (
+				F87F70D61CDC40E7000A9D88 /* AppDelegate.swift */,
+				F87F70D81CDC40E7000A9D88 /* ViewController.swift */,
+				F87F70DA1CDC40E7000A9D88 /* Main.storyboard */,
+				F87F70DD1CDC40E7000A9D88 /* Assets.xcassets */,
+				F87F70DF1CDC40E7000A9D88 /* LaunchScreen.storyboard */,
+				F87F70E21CDC40E7000A9D88 /* Info.plist */,
+			);
+			path = HealthKitBackgroundDelivery;
+			sourceTree = "<group>";
+		};
+		F87F70EA1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests */ = {
+			isa = PBXGroup;
+			children = (
+				F87F70EB1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.swift */,
+				F87F70ED1CDC40E7000A9D88 /* Info.plist */,
+			);
+			path = HealthKitBackgroundDeliveryTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F87F70D21CDC40E7000A9D88 /* HealthKitBackgroundDelivery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87F70F01CDC40E7000A9D88 /* Build configuration list for PBXNativeTarget "HealthKitBackgroundDelivery" */;
+			buildPhases = (
+				F87F70CF1CDC40E7000A9D88 /* Sources */,
+				F87F70D01CDC40E7000A9D88 /* Frameworks */,
+				F87F70D11CDC40E7000A9D88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthKitBackgroundDelivery;
+			productName = HealthKitBackgroundDelivery;
+			productReference = F87F70D31CDC40E7000A9D88 /* HealthKitBackgroundDelivery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F87F70E61CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F87F70F31CDC40E7000A9D88 /* Build configuration list for PBXNativeTarget "HealthKitBackgroundDeliveryTests" */;
+			buildPhases = (
+				F87F70E31CDC40E7000A9D88 /* Sources */,
+				F87F70E41CDC40E7000A9D88 /* Frameworks */,
+				F87F70E51CDC40E7000A9D88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F87F70E91CDC40E7000A9D88 /* PBXTargetDependency */,
+			);
+			name = HealthKitBackgroundDeliveryTests;
+			productName = HealthKitBackgroundDeliveryTests;
+			productReference = F87F70E71CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F87F70CB1CDC40E7000A9D88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ben Chatelain";
+				TargetAttributes = {
+					F87F70D21CDC40E7000A9D88 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F87F70E61CDC40E7000A9D88 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F87F70D21CDC40E7000A9D88;
+					};
+				};
+			};
+			buildConfigurationList = F87F70CE1CDC40E7000A9D88 /* Build configuration list for PBXProject "HealthKitBackgroundDelivery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F87F70CA1CDC40E7000A9D88;
+			productRefGroup = F87F70D41CDC40E7000A9D88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F87F70D21CDC40E7000A9D88 /* HealthKitBackgroundDelivery */,
+				F87F70E61CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F87F70D11CDC40E7000A9D88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87F70E11CDC40E7000A9D88 /* LaunchScreen.storyboard in Resources */,
+				F87F70DE1CDC40E7000A9D88 /* Assets.xcassets in Resources */,
+				F87F70DC1CDC40E7000A9D88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87F70E51CDC40E7000A9D88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F87F70CF1CDC40E7000A9D88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87F70D91CDC40E7000A9D88 /* ViewController.swift in Sources */,
+				F87F70D71CDC40E7000A9D88 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F87F70E31CDC40E7000A9D88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F87F70EC1CDC40E7000A9D88 /* HealthKitBackgroundDeliveryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F87F70E91CDC40E7000A9D88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F87F70D21CDC40E7000A9D88 /* HealthKitBackgroundDelivery */;
+			targetProxy = F87F70E81CDC40E7000A9D88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F87F70DA1CDC40E7000A9D88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F87F70DB1CDC40E7000A9D88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F87F70DF1CDC40E7000A9D88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F87F70E01CDC40E7000A9D88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F87F70EE1CDC40E7000A9D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F87F70EF1CDC40E7000A9D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F87F70F11CDC40E7000A9D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HealthKitBackgroundDelivery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.HealthKitBackgroundDelivery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F87F70F21CDC40E7000A9D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HealthKitBackgroundDelivery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.HealthKitBackgroundDelivery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F87F70F41CDC40E7000A9D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HealthKitBackgroundDeliveryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.HealthKitBackgroundDeliveryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthKitBackgroundDelivery.app/HealthKitBackgroundDelivery";
+			};
+			name = Debug;
+		};
+		F87F70F51CDC40E7000A9D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HealthKitBackgroundDeliveryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.phatbl.HealthKitBackgroundDeliveryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthKitBackgroundDelivery.app/HealthKitBackgroundDelivery";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F87F70CE1CDC40E7000A9D88 /* Build configuration list for PBXProject "HealthKitBackgroundDelivery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87F70EE1CDC40E7000A9D88 /* Debug */,
+				F87F70EF1CDC40E7000A9D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F87F70F01CDC40E7000A9D88 /* Build configuration list for PBXNativeTarget "HealthKitBackgroundDelivery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87F70F11CDC40E7000A9D88 /* Debug */,
+				F87F70F21CDC40E7000A9D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F87F70F31CDC40E7000A9D88 /* Build configuration list for PBXNativeTarget "HealthKitBackgroundDeliveryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F87F70F41CDC40E7000A9D88 /* Debug */,
+				F87F70F51CDC40E7000A9D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F87F70CB1CDC40E7000A9D88 /* Project object */;
+}
