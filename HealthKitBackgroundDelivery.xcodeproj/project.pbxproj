@@ -110,15 +110,15 @@
 		F87F70D51CDC40E7000A9D88 /* HealthKitBackgroundDelivery */ = {
 			isa = PBXGroup;
 			children = (
-				F87F70FA1CDC46EC000A9D88 /* HealthKitBackgroundDelivery.entitlements */,
 				F87F70D61CDC40E7000A9D88 /* AppDelegate.swift */,
 				F87F70F61CDC4144000A9D88 /* HealthKitManager.swift */,
 				F87F70D81CDC40E7000A9D88 /* OnboardingViewController.swift */,
 				F87F70F81CDC41A5000A9D88 /* FirstViewControllerAfterOnboardingFlow.swift */,
 				F87F70DA1CDC40E7000A9D88 /* Main.storyboard */,
-				F87F70DD1CDC40E7000A9D88 /* Assets.xcassets */,
 				F87F70DF1CDC40E7000A9D88 /* LaunchScreen.storyboard */,
+				F87F70DD1CDC40E7000A9D88 /* Assets.xcassets */,
 				F87F70E21CDC40E7000A9D88 /* Info.plist */,
+				F87F70FA1CDC46EC000A9D88 /* HealthKitBackgroundDelivery.entitlements */,
 			);
 			path = HealthKitBackgroundDelivery;
 			sourceTree = "<group>";

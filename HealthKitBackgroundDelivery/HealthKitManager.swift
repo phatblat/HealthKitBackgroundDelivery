@@ -19,7 +19,7 @@ class HealthKitManager {
     /// delivery. This is safe to call repeatedly and should be called at least once per launch.
     func requestAccessWithCompletion(completion: AccessRequestCallback) {
         guard deviceSupportsHealthKit() else {
-            debugPrint("Can't request access to HealthKit when it's not supported on the device.")
+            debugPrint("HealthKit is not supported on this device. (or tests are running)")
             return
         }
 
@@ -45,9 +45,16 @@ class HealthKitManager {
 
 // MARK: - Private
 private extension HealthKitManager {
+    /// Determines whether the device supports HealthKit. HealthKit is not supported while running unit tests (XCTestCase)
+    ///
+    /// - returns: true if device and current OS support HealthKit; false otherwise.
+    private func deviceSupportsHealthKit() -> Bool {
+        return HKHealthStore.isHealthDataAvailable() && NSClassFromString("XCTestCase") == nil
+    }
+
     /// Initiates an `HKAnchoredObjectQuery` for each type of data that the app reads and stores
     /// the result as well as the new anchor.
-    func readHealthKitData() { /* ... */ }
+    private func readHealthKitData() { /* ... */ }
 
     /// Sets up the observer queries for background health data delivery.
     ///

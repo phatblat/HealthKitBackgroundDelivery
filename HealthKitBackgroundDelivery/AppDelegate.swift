@@ -13,9 +13,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     let healthKitManager = HealthKitManager()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        if onboardingComplete {
+        if NSUserDefaults.standardUserDefaults().boolForKey("OnboardingComplete") {
+            debugPrint("Onboarding has been completed, requesting access to HealthKit")
             healthKitManager.requestAccessWithCompletion() { success, error in
-                if success { print("HealthKit access granted") }
+                if success { debugPrint("HealthKit access granted") }
                 else { print("Error requesting access to HealthKit: \(error)") }
             }
         }

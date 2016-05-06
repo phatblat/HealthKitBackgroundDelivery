@@ -9,6 +9,9 @@
 import UIKit
 
 class OnboardingViewController: UIViewController {
-
+    @IBAction func didTapStartButton(sender: AnyObject) {
+        debugPrint("didTapStartButton:")
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "OnboardingComplete")
+    }
 }
 
