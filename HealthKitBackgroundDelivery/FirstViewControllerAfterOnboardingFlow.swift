@@ -28,4 +28,9 @@ class FirstViewControllerAfterOnboardingFlow: UIViewController {
             }
         }
     }
+
+    @IBAction func didTapResetOnboarding(sender: AnyObject) {
+        debugPrint("didTapResetOnboarding")
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "OnboardingComplete")
+    }
 }

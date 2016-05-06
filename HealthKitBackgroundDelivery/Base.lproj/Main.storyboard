@@ -16,7 +16,21 @@
                     <view key="view" contentMode="scaleToFill" id="3O9-Az-WFC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfP-W8-eXE">
+                                <rect key="frame" x="83" y="573" width="209" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Reset Onboarding"/>
+                                <connections>
+                                    <action selector="didTapResetOnboarding:" destination="0Td-UY-D4J" eventType="touchUpInside" id="ZsP-Sh-v9p"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dfP-W8-eXE" firstAttribute="centerX" secondItem="3O9-Az-WFC" secondAttribute="centerX" id="PIz-Y6-8Nk"/>
+                            <constraint firstItem="5Td-iX-M3N" firstAttribute="top" secondItem="dfP-W8-eXE" secondAttribute="bottom" constant="50" id="os9-nx-FTI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CgQ-Gx-QCo"/>
                 </viewController>
