@@ -80,10 +80,6 @@ private extension HealthKitManager {
     /// - parameter type: `HKObjectType` which has new data avilable.
     private func queryForUpdates(type: HKObjectType) {
         switch type {
-        case HKObjectType.characteristicTypeForIdentifier(HKCharacteristicTypeIdentifierDateOfBirth)!:
-            debugPrint("HKCharacteristicTypeIdentifierDateOfBirth") // not currently supported rdar://22221216
-        case HKObjectType.characteristicTypeForIdentifier(HKCharacteristicTypeIdentifierBiologicalSex)!:
-            debugPrint("HKCharacteristicTypeIdentifierBiologicalSex")	// not currently supported rdar://22221216
         case HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)!:
             debugPrint("HKQuantityTypeIdentifierBodyMass")
         case HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight)!:
@@ -99,11 +95,9 @@ private extension HealthKitManager {
     /// - returns: A set of HKObjectType.
     private func dataTypesToRead() -> Set<HKObjectType> {
         return Set(arrayLiteral:
-            HKObjectType.characteristicTypeForIdentifier(HKCharacteristicTypeIdentifierDateOfBirth)!,
-                   HKObjectType.characteristicTypeForIdentifier(HKCharacteristicTypeIdentifierBiologicalSex)!,
-                   HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)!,
-                   HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight)!,
-                   HKObjectType.workoutType()
+            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)!,
+            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight)!,
+            HKObjectType.workoutType()
         )
     }
     
@@ -113,8 +107,8 @@ private extension HealthKitManager {
     private func dataTypesToWrite() -> Set<HKSampleType> {
         return Set(arrayLiteral:
             HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)!,
-                   HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight)!,
-                   HKObjectType.workoutType()
+            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight)!,
+            HKObjectType.workoutType()
         )
     }
 }
